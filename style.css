@@ -1,0 +1,80 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(33, 140, 228);  /* Blue background for the entire page */
+    color: rgb(15, 0, 0); 
+}
+
+/* Title styling */
+h1 {
+    color: rgb(255, 255, 255);  /* Yellow text for the title */
+}
+
+/* Customize Grid Section */
+#custom-grid {
+    margin-bottom: 20px; /* Adds space between the custom grid section and the actual grid */
+}
+
+/* Add a margin below the input field and buttons */
+#word-input, #submit-word, #randomize-btn {
+    margin-bottom: 20px; /* Adds space between input and buttons */
+}
+
+/* Input field styling */
+#word-input, #custom-input {
+    padding: 12px 20px;            /* Larger padding for bigger inputs */
+    font-size: 18px;               /* Larger font size */
+    border: 3px solid #ddd;        /* Big border */
+    border-radius: 15px;           /* Rounded edges */
+    width: 300px;                  /* Wider input field */
+    margin-bottom: 20px;           /* Adds space below the input */
+    background-color: #fff;        /* White background for the input fields */
+    color: #333;                   /* Dark text for readability */
+}
+
+/* Button styling */
+#submit-word, #randomize-grid, #set-grid {
+    padding: 10px 20px;            /* Larger button size */
+    font-size: 16px;               /* Button font size */
+    margin-right: 10px;            /* Space between buttons */
+    border-radius: 10px;           /* Rounded button edges */
+    background-color: rgb(206, 166, 47);  /* Same yellow as title */
+    color: white;                  /* White text */
+    border: none;                  /* Remove default border */
+    cursor: pointer;              /* Pointer on hover */
+}
+
+/* Hover effect for the buttons */
+#submit-word:hover, #randomize-grid:hover, #set-grid:hover {
+    background-color: #b89733;     /* Darker yellow on hover */
+}
+
+/* Grid container styling */
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 60px); /* 4 columns, each 60px wide */
+    grid-template-rows: repeat(4, 60px);    /* 4 rows, each 60px tall */
+    gap: 10px;                             /* Space between grid cells */
+    padding-left: 400px;                    /* Left padding for grid */
+    margin-bottom: 20px;                    /* Space between grid and buttons */
+}
+
+/* Grid cell styling */
+.grid-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;  /* White background for the grid cells */
+    border: 2px solid #dddddd;  /* Thicker border for the grid cells */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#found-words {
+    margin-top: 20px;
+}
+

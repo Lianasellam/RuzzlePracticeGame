@@ -1,0 +1,53 @@
+How to Play the Ruzzle Game on Your Computer
+Follow these simple steps to get the game working on your computer:
+
+**1. Download the ZIP File**
+Click the link you were provided to download the ZIP file.
+The ZIP file will likely be saved in your Downloads folder.
+
+**2. Extract the ZIP File**
+Go to your Downloads folder where you just downloaded the ZIP file.
+Right-click on the ZIP file and choose Extract All (or Unzip depending on your system).
+Choose where you want to extract the files, and click Extract. This will create a folder with all the game files inside.
+
+**3. Open the Game Folder**
+After extracting, you'll see a new folder. Double-click on that folder to open it.
+Inside this folder, you’ll see the following files:
+index.html
+style.css
+app.js
+words.json
+
+**4. Open the Game in Your Browser**
+Find the file named index.html inside the folder.
+Double-click on index.html. This will open the game in your web browser (like Chrome, Firefox, Safari, etc.).
+
+**5. Playing the Game**
+Once the game opens, you’ll see the game interface.
+Here are the main parts of the game:
+Enter 16 Letters: You can type your own letters for the grid here.
+Set Grid: Once you’ve entered your 16 letters, click this button to set the grid.
+Randomize Grid: If you want the game to pick random letters for you, click this button instead.
+Enter a Word: Type a word you think you can make from the letters on the grid.
+Submit Word: After typing a word, click this button to submit it and see if it's valid.
+As you play, the game will check your words, and you’ll see the valid ones listed below the grid.
+
+**6. When You’re Done**
+After you're done playing, you can close the browser tab by clicking the "X" at the top right of your browser.
+You can also close the folder with the game files if you're finished with it.
+
+
+
+Bonus Tips
+If you want to play again later, just follow steps 3-5 again. Double-click the index.html file, and you'll be ready to go!
+You can edit the letters in the grid each time before playing. Just type 16 new letters and click "Set Grid."
+
+
+
+
+In Case You Need Help
+If you're having trouble opening the game or something isn't working as expected, here are a few simple things you can try:
+
+Make sure you extracted the ZIP file correctly.
+Double-check that you’re opening the index.html file, not any other file in the folder.
+If the game doesn’t load, try opening the file in a different browser (e.g., Chrome, Firefox).

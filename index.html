@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R U Z Z L E</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>RUZZLE</h1>
+
+    <!-- Custom Grid Section -->
+    <div id="custom-grid">
+        <input type="text" id="custom-input" maxlength="16" placeholder="Enter 16 letters" />
+        <button id="set-grid">Set Grid</button>
+        <button id="randomize-grid">Randomize Grid</button> <!-- New Randomize Button -->
+    </div>
+
+    <!-- Grid Section -->
+    <div id="grid-container">
+        <!-- Grid cells will be dynamically generated -->
+    </div>
+
+    <!-- Word Input and List -->
+    <div>
+        <input type="text" id="word-input" placeholder="Enter a word" />
+        <button id="submit-word">Submit Word</button>
+    </div>
+
+    <div id="found-words">
+        <h2>Found Words:</h2>
+        <ul id="word-list">
+            <!-- List of found words will appear here -->
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
