@@ -13,7 +13,7 @@
     <div id="custom-grid">
         <input type="text" id="custom-input" maxlength="16" placeholder="Enter 16 letters" />
         <button id="set-grid">Set Grid</button>
-        <button id="randomize-grid">Randomize Grid</button> <!-- New Randomize Button -->
+        <button id="randomize-grid">Randomize Grid</button>
     </div>
 
     <!-- Grid Section -->
@@ -23,12 +23,12 @@
 
     <!-- Word Input and List -->
     <div>
-        <input type="text" id="word-input" placeholder="Enter a word" />
+        <input type="text" id="word-input" placeholder="Enter a word" style="text-transform: uppercase;" />
         <button id="submit-word">Submit Word</button>
     </div>
 
     <div id="found-words">
-        <h2>Found Words:</h2>
+        <h2>Found Words: <span id="word-count">0</span></h2>
         <ul id="word-list">
             <!-- List of found words will appear here -->
         </ul>
