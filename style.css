@@ -9,56 +9,58 @@ body {
 
 /* Title styling */
 h1 {
-    color: rgb(255, 255, 255);  /* Yellow text for the title */
+    color: rgb(255, 255, 255);  /* White title text */
 }
 
 /* Customize Grid Section */
 #custom-grid {
-    margin-bottom: 20px; /* Adds space between the custom grid section and the actual grid */
-}
-
-/* Add a margin below the input field and buttons */
-#word-input, #submit-word, #randomize-btn {
-    margin-bottom: 20px; /* Adds space between input and buttons */
+    margin-bottom: 20px;
 }
 
 /* Input field styling */
 #word-input, #custom-input {
-    padding: 12px 20px;            /* Larger padding for bigger inputs */
-    font-size: 18px;               /* Larger font size */
-    border: 3px solid #ddd;        /* Big border */
-    border-radius: 15px;           /* Rounded edges */
-    width: 300px;                  /* Wider input field */
-    margin-bottom: 20px;           /* Adds space below the input */
-    background-color: #fff;        /* White background for the input fields */
-    color: #333;                   /* Dark text for readability */
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 3px solid #ddd;
+    border-radius: 15px;
+    width: 300px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #333;
 }
 
 /* Button styling */
 #submit-word, #randomize-grid, #set-grid {
-    padding: 10px 20px;            /* Larger button size */
-    font-size: 16px;               /* Button font size */
-    margin-right: 10px;            /* Space between buttons */
-    border-radius: 10px;           /* Rounded button edges */
-    background-color: rgb(206, 166, 47);  /* Same yellow as title */
-    color: white;                  /* White text */
-    border: none;                  /* Remove default border */
-    cursor: pointer;              /* Pointer on hover */
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: rgb(206, 166, 47);
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-/* Hover effect for the buttons */
+/* Hover effect for buttons */
 #submit-word:hover, #randomize-grid:hover, #set-grid:hover {
-    background-color: #b89733;     /* Darker yellow on hover */
+    background-color: #b89733;
+}
+
+/* Game area: Grid + Found Words side-by-side */
+#game-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 40px;
 }
 
 /* Grid container styling */
 #grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 60px); /* 4 columns, each 60px wide */
-    grid-template-rows: repeat(4, 60px);    /* 4 rows, each 60px tall */
-    gap: 10px;                             /* Space between grid cells */
-    padding-left: 400px;                    /* Left padding for grid */
-    margin-bottom: 20px;                    /* Space between grid and buttons */
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(4, 60px);
+    gap: 10px;
 }
 
 /* Grid cell styling */
@@ -68,13 +70,43 @@ h1 {
     align-items: center;
     width: 60px;
     height: 60px;
-    background-color: #ffffff;  /* White background for the grid cells */
-    border: 2px solid #dddddd;  /* Thicker border for the grid cells */
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
     font-size: 30px;
+    font-weight: bold;
     cursor: pointer;
 }
 
+/* Found Words styling */
 #found-words {
-    margin-top: 20px;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 200px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+#found-words h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+#word-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#word-list li {
+    font-size: 18px;
+    padding: 4px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#word-input-area {
+    margin-top: 20px;
+    text-align: center;
+}

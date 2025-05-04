@@ -16,25 +16,32 @@
     <button id="randomize-grid">Randomize Grid</button>
   </div>
 
-  <!-- Grid Section -->
-  <div id="grid-container"></div>
+  <!-- Game Area: Grid + Found Words side by side -->
+  <div id="game-area">
+    <div>
+      <!-- Grid -->
+      <div id="grid-container"></div>
 
-  <!-- Word Input and List -->
-  <div>
-    <input
-      type="text"
-      id="word-input"
-      placeholder="Enter a word"
-      style="text-transform: uppercase;"
-    />
-    <button id="submit-word">Submit Word</button>
+      <!-- Word Input BELOW the grid -->
+      <div id="word-input-area">
+        <input
+          type="text"
+          id="word-input"
+          placeholder="Enter a word"
+          style="text-transform: uppercase;"
+        />
+        <button id="submit-word">Submit Word</button>
+      </div>
+    </div>
+
+    <!-- Found Words List -->
+    <div id="found-words">
+      <h2>Found Words: <span id="word-count">0</span></h2>
+      <ul id="word-list"></ul>
+    </div>
   </div>
 
-  <div id="found-words">
-    <h2>Found Words: <span id="word-count">0</span></h2>
-    <ul id="word-list"></ul>
-  </div>
-
+  <!-- JavaScript logic -->
   <script src="app.js"></script>
 </body>
 </html>
